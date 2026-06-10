@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $tempRoot = "C:\temp\threads-build"
-$projectRoot = Split-Path -Parent $PSScriptRoot
+$projectRoot = $PSScriptRoot
 
 if (-not (Test-Path -LiteralPath $tempRoot)) {
   New-Item -ItemType Directory -Path $tempRoot -Force | Out-Null

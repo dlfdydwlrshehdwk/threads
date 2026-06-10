@@ -34,8 +34,8 @@
   },
   "scripts": {
     "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "powershell -ExecutionPolicy Bypass -File ./scripts/run-android.ps1",
+    "reset-project": "echo reset-project script was removed after project reset",
+    "android": "powershell -ExecutionPolicy Bypass -File ./run-android.ps1",
     "android:raw": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
