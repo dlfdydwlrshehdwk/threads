@@ -27,16 +27,12 @@ const AnimatedTabBarButton = ({
   };
 
   const handlePressOut = () => {
-    Animated.sequence([
-      Animated.spring(scaleValue, {
-        toValue: 1.2,
-        useNativeDriver: true,
-      }),
-      Animated.spring(scaleValue, {
-        toValue: 1,
-        useNativeDriver: true,
-      }),
-    ]).start();
+    Animated.spring(scaleValue, {
+      toValue: 1,
+      useNativeDriver: true,
+      bounciness: 12,
+      speed: 20,
+    }).start();
   };
 
   return (
